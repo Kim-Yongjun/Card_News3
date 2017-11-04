@@ -20,18 +20,5 @@ public class Genre extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_genre);
-        init();
-        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(Genre.this, arrayList.get(i).getName(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-    void init(){
-        gridview = (GridView)findViewById(R.id.grid1);
-        arrayList.add(new Data("Avocado",R.drawable.catal));
-        adapter = new My_Adapter(arrayList,Genre.this);
-        gridview.setAdapter(adapter);
     }
 }

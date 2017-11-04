@@ -34,10 +34,36 @@ public class MainActivity extends AppCompatActivity {
             // 리스트 목록 클릭 이벤트
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent= new Intent(MainActivity.this, Genre.class);
-                startActivity(intent);}
+                switch (which) {
+                    case 0:
+                        Intent intent=new Intent(MainActivity.this,Genre.class);
+                        startActivity(intent);
+                        Toast.makeText(MainActivity.this, "정치다 이놈아", Toast.LENGTH_SHORT).show();break;
+                    case 1:
+                        Toast.makeText(MainActivity.this, getResources().getStringArray(R.array.genre)[which], Toast.LENGTH_SHORT).show();break;
+
+                    case 2:
+                        Toast.makeText(MainActivity.this, getResources().getStringArray(R.array.genre)[which], Toast.LENGTH_SHORT).show();break;
+
+                    case 3:
+                        Toast.makeText(MainActivity.this, getResources().getStringArray(R.array.genre)[which], Toast.LENGTH_SHORT).show();break;
+
+                    case 4:
+                        Toast.makeText(MainActivity.this, getResources().getStringArray(R.array.genre)[which], Toast.LENGTH_SHORT).show();break;
+
+                    case 5:
+                        Toast.makeText(MainActivity.this, getResources().getStringArray(R.array.genre)[which], Toast.LENGTH_SHORT).show();break;
+
+                    case 6:
+                        Toast.makeText(MainActivity.this, getResources().getStringArray(R.array.genre)[which], Toast.LENGTH_SHORT).show();break;
+
+
+
+                }
+
+            }
 
         });
         return builder.create();
-    }
+       }
 }
