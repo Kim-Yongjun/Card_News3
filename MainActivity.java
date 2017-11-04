@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         Intent intent=new Intent(MainActivity.this,Genre.class);
                         startActivity(intent);
-                        Toast.makeText(MainActivity.this, "정치다 이놈아", Toast.LENGTH_SHORT).show();break;
+                        Toast.makeText(MainActivity.this, "정치다 이놈아!", Toast.LENGTH_SHORT).show();break;
                     case 1:
                         Toast.makeText(MainActivity.this, getResources().getStringArray(R.array.genre)[which], Toast.LENGTH_SHORT).show();break;
 
